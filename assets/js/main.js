@@ -93,7 +93,7 @@ function pelear() {
 
     document.getElementById('ataca').innerHTML = '<div><h4>Pokemon ' + pokemonQueAtaca + ' ataco a ' + pokemonAtacado +
         ' y pokemon ' + pokemonAtacado + ' tiene ' + atacado.vida + ' de vida restante</h4></div>' +
-        '<img width="200px" src="assets/img/' + pokemonQueAtaca + '.png" alt="">' + '<h3><strong>VS</strong></h3>' +
-        '<img width="200px" src="assets/img/' + pokemonAtacado + '.png" alt="">';
+        '<img width="200px" src="assets/img/' + pokemonQueAtaca + '.jpg" alt="">' + '<h3><strong>VS</strong></h3>' +
+        '<img width="200px" src="assets/img/' + pokemonAtacado + '.jpg" alt="">';
 
 }
