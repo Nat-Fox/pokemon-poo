@@ -9,27 +9,21 @@
 </head>
 
 <body>
-
-    <!-- Pokemon que ataca -->
-    <section>
-        <select id='pokemon-ataca'>
-            <option value="">Pikachu</option>
-            <option value="">Charmander</option>
-            <option value="">Vulpix</option>
-            <option value="">Lapras</option>
-        </select>
+    <div align="center">
+        <!-- Pokemon que ataca -->
+        <select id='pokemon-ataca'></select>
 
         <!-- Pokemon a atacar -->
-        <select id="pokemon-atacado">
-            <option value="">Pikachu</option>
-            <option value="">Charmander</option>
-            <option value="">Vulpix</option>
-            <option value="">Lapras</option>
-        </select>
+        <select id="pokemon-atacado"></select>
+
+        <button type="button" onclick="pelear();">Pelear</button>
+
+        <p id="ataca"></p>
+        <p id="atacado"></p>
+
+    </div>
 
 
-        <button type="submit" onclick="pelear();">Pelear</button>
-    </section>
 
 
     <script src="js/main.js" type="text/javascript"></script>
