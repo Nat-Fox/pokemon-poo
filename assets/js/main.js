@@ -7,7 +7,7 @@ function Pokemon(nombre, color, poderDeAtaque) {
     //modifico el valor para probar las batallas
     this.vida = 500;
     this.poderDeAtaque = poderDeAtaque;
-
+    //funcion no utilizada
     this.mostrarPokemon = function() {
         return ('Hola, soy: ' + this.nombre + 'y soy de color: ' + this.color);
     };
@@ -15,7 +15,7 @@ function Pokemon(nombre, color, poderDeAtaque) {
     this.push = function(pokemon) {
         this.lista.push(pokemon);
     };
-
+    //funcion no utilizada
     this.aumentarAmistad = function(valor) {
         this.nivelDeAmistad = this.nivelDeAmistad + valor;
     };
@@ -76,7 +76,6 @@ function pelear() {
     //Obtiene el pokemon atacado
     pokemonAtacado = document.getElementById('pokemon-atacado').value;
 
-
     if (pokemonQueAtaca === pokemonAtacado) {
         alert('No puedes atacarte a ti mismo');
         return;
@@ -88,7 +87,6 @@ function pelear() {
     var poderAtacante = prompt('Ingrese el poder de ataque del pokemon atacado');
     var atacante = new Pokemon(pokemonQueAtaca, 'color', poderAtacante);
     var atacado = new Pokemon(pokemonAtacado, 'color', poderAtacante);
-
 
     atacante.atacar(atacado);
     console.log(atacado.vida);
