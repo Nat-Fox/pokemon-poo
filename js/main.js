@@ -4,7 +4,7 @@ function Pokemon(nombre, color, poderDeAtaque) {
     this.color = color;
 
     this.nivelDeAmistad = 0;
-    this.vida = 100;
+    this.vida = 1000;
     this.poderDeAtaque = poderDeAtaque;
 
     this.mostrarPokemon = function() {
@@ -34,8 +34,6 @@ lista.push(Pikachu);
 lista.push(Charmander);
 lista.push(Vulpix);
 lista.push(Lapras);
-
-console.log(lista);
 
 //Dibujo el select de quien ataca
 function dibujarAtacan() {
@@ -68,12 +66,28 @@ dibujarAtacados();
 
 function pelear() {
     //Obtiene el pokemon que va a atacar
-    var pokemonQueAtaca = document.getElementById("pokemon-ataca").value;
-    document.getElementById('ataca').innerHTML = 'El pokemon que ataca es ' + pokemonQueAtaca;
+    pokemonQueAtaca = document.getElementById("pokemon-ataca").value;
 
     //Obtiene el pokemon atacado
-    var pokemonAtacado = document.getElementById('pokemon-atacado').value;
-    document.getElementById('atacado').innerHTML = 'El pokemon atacado es ' + pokemonAtacado;
+    pokemonAtacado = document.getElementById('pokemon-atacado').value;
+
+    //podria pedir el poder con un prompt
+    var atacante = new Pokemon(pokemonQueAtaca, 'color', 100);
+    var atacado = new Pokemon(pokemonAtacado, 'color', 100);
+
+    if (pokemonQueAtaca === pokemonAtacado) {
+        alert('No puedes atacarte a ti mismo');
+        return;
+    }
+
+    atacante.atacar(atacado);
+    console.log(atacado.vida);
+
+    document.getElementById('ataca').innerHTML = 'Pokemon ' + pokemonQueAtaca + ' ataco a ' + pokemonAtacado +
+        ' y pokemon ' + pokemonAtacado + ' tiene vida ' + atacado.vida;
+
+
+
 
 
 }
