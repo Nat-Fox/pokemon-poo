@@ -27,12 +27,6 @@ function Pokemon(nombre, color, poderDeAtaque) {
 
 //Ingreso en un arreglo el equipo de Pokemon para dibujar en el html posteriormente
 var lista = ['Pikachu', 'Charmander', 'Vulpix', 'Lapras'];
-var fotos = [
-    'pikachu.png',
-    'charmander.png',
-    'vulpix.png',
-    'lapras.png'
-];
 // const Pikachu = new Pokemon('Pikachu', 'amarillo', 100);
 // const Charmander = new Pokemon('Charmander', 'rojo', 20);
 // const Vulpix = new Pokemon('Vulpix', 'naranjo', 50);
