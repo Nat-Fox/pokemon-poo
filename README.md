@@ -1,0 +1,1 @@
+Este es un ejemplo de objetos usando pokemon, lección 16.
