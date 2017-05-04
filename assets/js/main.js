@@ -95,9 +95,13 @@ function pelear() {
     atacante.atacar(atacado);
     console.log(atacado.vida);
 
-    document.getElementById('ataca').innerHTML = '<div><h4>Pokemon ' + pokemonQueAtaca + ' ataco a ' + pokemonAtacado +
+    document.getElementById('ataca').innerHTML = '<div><h4>Pokemon ' + pokemonQueAtaca + ' ataco a ' +
+        pokemonAtacado +
         ' y pokemon ' + pokemonAtacado + ' tiene ' + atacado.vida + ' de vida restante</h4></div>' +
-        '<img width="200px" src="assets/img/' + primeraMinuscula(pokemonQueAtaca) + '.jpg" alt="">' + '<h3><strong>VS</strong></h3>' +
-        '<img width="200px" src="assets/img/' + primeraMinuscula(pokemonAtacado) + '.jpg" alt="">';
+        '<img width="200px" src="assets/img/' + primeraMinuscula(pokemonQueAtaca) + '.jpg" alt="">' +
+        '<h3><strong>VS</strong></h3>' + '<img width="200px" src="assets/img/' +
+        primeraMinuscula(pokemonAtacado) + '.jpg" alt="">';
+
+    console.log(primeraMinuscula(pokemonQueAtaca));
 
 }
