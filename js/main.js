@@ -20,8 +20,16 @@ function Pokemon(nombre, color, poderDeAtaque) {
 }
 
 const Pikachu = new Pokemon('Pikachu', 'amarillo', 100);
-const Charmander = new Pokemon('Charmander', 'rojo', 20)
+const Charmander = new Pokemon('Charmander', 'rojo', 20);
+const Vulpix = new Pokemon('Vulpix', 'naranjo', 50);
+const Lapras = new Pokemon('Lapras', 'celeste', 250);
 
 Pikachu.atacar(Charmander);
-document.write('La vida de Charmander es: ', Charmander.vida);
+//document.write('La vida de Charmander es: ', Charmander.vida);
 console.log(Charmander.vida);
+
+function pelear() {
+    var id1 = document.getElementById('pokemon-ataca');
+    console.log(id1);
+
+}
